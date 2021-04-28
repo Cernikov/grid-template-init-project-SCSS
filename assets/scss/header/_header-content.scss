@@ -1,0 +1,16 @@
+.header-content {
+  position: relative;
+  /* background-color: rgb(226, 43, 43); */
+
+  &__title {
+    text-align: center;
+    margin: 0 0 53px 0;
+  }
+  
+  &__actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+}
+

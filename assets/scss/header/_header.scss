@@ -1,0 +1,12 @@
+.header {
+  position: relative;
+  min-height: 100vh;
+  color: #ffffff;
+  background-color: #2d3651;
+  // background-image: url(/assets/img/img-header.png);
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+  display: grid;
+  align-content: center;
+}
