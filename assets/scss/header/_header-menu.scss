@@ -1,14 +1,20 @@
 .header-menu {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+  @include md{
+    background-color:rgba($color-gray-dark, 0.25) ;
+  }
+  
 
   &__container {
     display: grid;
-    grid-template-columns: auto 1fr;
     align-items: center;
+
+    @extend %container;
+    grid-template-columns: auto 1fr;
   }
 }
 
@@ -16,10 +22,5 @@
 
 // TODO: переделать через экстенд
 
-.header-menu__container,
-.header-content__container {
-  max-width: 1340px;
-  margin: auto;
-  padding-right: 20px;
-  padding-left: 20px;
-}
+// .header-menu__container,
+// .header-content__container 

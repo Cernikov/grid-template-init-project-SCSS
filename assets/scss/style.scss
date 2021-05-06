@@ -1,9 +1,9 @@
 @import "../../libs/normalize.css/normalize.scss";
-// @import "skin";
-// @import "variables";
-// @import "mixins";
-// @import "mixins-media";
-// @import "extends";
+@import "skin";
+@import "variables";
+@import "mixins";
+@import "mixins-media";
+@import "extends";
 
 @import "common";
 @import "header/header";
@@ -15,44 +15,40 @@
 
 @import "sections/skills/skills";
 @import "sections/skills/skill-item";
-// @import "sections/section-about";
-// @import "sections/section-form";
-// @import "sections/section-posts";
+@import "sections/section-about";
+@import "sections/section-form";
+@import "sections/section-posts";
 
-// @import "footer";
-
-
+@import "footer";
 
 
-@media (max-width: 992px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-  .header-content__title {
-    text-align: center;
-    margin: 0 0 43px 0;
-  }
-}
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: 1.875rem;
-  }
 
-  .header-content__title {
-    text-align: center;
-    margin: 0 0 33px 0;
-  }
-}
+// @media (max-width: 992px) {
 
-@media (min-height: 641px) {
-  .skill-item {
-    min-height: calc(33.333vh - 40px / 3);
-  }
-}
+//   .header-content__title {
+//     text-align: center;
+//     margin: 0 0 43px 0;
+//   }
+// }
 
-@media (max-height: 641px) {
-  .skill-item {
-    min-height: 200px;
-  }
-}
+// @media (max-width: 768px) {
+
+
+//   .header-content__title {
+//     text-align: center;
+//     margin: 0 0 33px 0;
+//   }
+// }
+
+// @media (min-height: 641px) {
+//   .skill-item {
+//     min-height: calc(33.333vh - 40px / 3);
+//   }
+// }
+
+// @media (max-height: 641px) {
+//   .skill-item {
+//     min-height: 200px;
+//   }
+// }

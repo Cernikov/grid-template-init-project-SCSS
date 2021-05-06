@@ -1,8 +1,11 @@
 .skill-item {
-  overflow: hidden;
   position: relative;
 
+  overflow: hidden;
+
   // background-color: red;
+
+
 
   &:hover {
     .skill-item__overlay {
@@ -14,85 +17,99 @@
     }
 
     .skill-item__link {
-      color: #d66926;
+      color: $color-accent;
     }
   }
 
-  
-&__overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  // background-color: #2d3651;
-  // opacity: 0.8;
-  z-index: 1;
-  transition: opacity 0.5s;
+
+  &__overlay {
+    // background-color: $color-primary;
+    // opacity: 0.8;
+    z-index: 1;
+
+    transition: opacity 0.5s;
+
+    @include pos-absolute;
+  }
+
+  &__image {
+    transition: transform 0.5s;
+    // background-image: url(../img/img-html.png);
+
+    background-color: $color-primary;
+    background-position: center;
+    background-size: cover;
+
+    @include pos-absolute;
+  }
+
+  &__title {
+    z-index: 2;
+
+    margin: 0;
+
+    letter-spacing: 0.1em;
+
+    @include pos-absolute;
+    @include md-min {
+      font-size: 1.25rem;
+    }
+    @include md {
+      font-size: 1.125rem;
+    }
+  }
+
+  &__link {
+    // background-color: #d53d27;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    padding: $gap;
+
+    transition: color 0.5s;
+  }
 }
 
-&__image {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  // background-image: url(../img/img-html.png);
-  background-color: #2d3651;
-  background-position: center;
-  background-size: cover;
-  transition: transform 0.5s;
+
+@for $i from 1 through 9 {
+  .skill-item:nth-of-type(#{$i}) {
+    grid-area: art#{$i};
+  }
+
+
+
+  // ul:nth-child(3n + #{$i}) {
+  //   background-color: lighten($base-color, $i * 5%);
+  // }
 }
 
-&__title {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0;
-  z-index: 2;
-  font-size: 1.25rem;
-  letter-spacing: 0.1em;
-}
-
-&__link {
-  // background-color: #d53d27;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  transition: color 0.5s;
-}
-
-}
-
-.skill-item:nth-of-type(1) {
-  grid-area: art1;
-}
-.skill-item:nth-of-type(2) {
-  grid-area: art2;
-}
-.skill-item:nth-of-type(3) {
-  grid-area: art3;
-}
-.skill-item:nth-of-type(4) {
-  grid-area: art4;
-}
-.skill-item:nth-of-type(5) {
-  grid-area: art5;
-}
-.skill-item:nth-of-type(6) {
-  grid-area: art6;
-}
-.skill-item:nth-of-type(7) {
-  grid-area: art7;
-}
-.skill-item:nth-of-type(8) {
-  grid-area: art8;
-}
-.skill-item:nth-of-type(9) {
-  grid-area: art9;
-}
+// .skill-item:nth-of-type(1) {
+//   grid-area: art1;
+// }
+// .skill-item:nth-of-type(2) {
+//   grid-area: art2;
+// }
+// .skill-item:nth-of-type(3) {
+//   grid-area: art3;
+// }
+// .skill-item:nth-of-type(4) {
+//   grid-area: art4;
+// }
+// .skill-item:nth-of-type(5) {
+//   grid-area: art5;
+// }
+// .skill-item:nth-of-type(6) {
+//   grid-area: art6;
+// }
+// .skill-item:nth-of-type(7) {
+//   grid-area: art7;
+// }
+// .skill-item:nth-of-type(8) {
+//   grid-area: art8;
+// }
+// .skill-item:nth-of-type(9) {
+//   grid-area: art9;
+// }

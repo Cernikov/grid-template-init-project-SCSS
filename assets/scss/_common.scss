@@ -4,23 +4,46 @@
 
 html {
   overflow-y: scroll;
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
+
   letter-spacing: 0.1em;
-  color: #637588;
+
+  color: $color-gray;
+
+  font-family: $font-main;
+  font-size: 16px;
 }
 
 h1 {
-  font-size: 3.75rem;
   letter-spacing: 0.08em;
+
+  font-family: $font-header;
   font-weight: 300;
-  font-family: "Roboto Slab", serif;
   line-height: 1.2em;
+
+  @include lg-min {
+    font-size: 3.75rem;
+  }
+  // @media (min-height: $lg) {
+  //   font-size: 3.75rem;
+  // }
+  @include lg-md {
+    font-size: 2.5rem;
+  }
+  // @media (max-width: $lg - 0.2) and(min-width: $md) {
+  //   font-size: 2.5rem;
+  // }
+  @include md {
+    font-size: 1.875rem;
+  }
+  // @media (max-width: $md - 0.2) {
+  //   font-size: 1.875rem;
+  // }
 }
 
 a {
-  color: #ffffff;
   text-decoration: none;
+
+  color: $color-light;
 }
 
 .btn {
@@ -28,26 +51,50 @@ a {
   align-items: center;
   justify-content: center;
 
-  height: 60px;
-
-  font-size: 1.125rem;
-  letter-spacing: 0.1em;
   transition: background-color 0.5s;
+  letter-spacing: 0.1em;
 
   &:hover,
   &:focus {
-    background-color: #d66926;
+    background-color: $color-accent;
   }
 
   &--light {
-    min-width: 250px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid #ffffff;
+    border: 2px solid $color-light;
+    background-color: rgba($color-light, 0.1);
+
+    @include lg-min {
+      min-width: 250px;
+      height: 60px;
+
+      font-size: 1.125rem;
+    }
+    @include lg-md {
+      min-width: 200px;
+      height: 50px;
+
+      font-size: 1rem;
+    }
+    @include md {
+      min-width: 170px;
+      height: 40px;
+
+      font-size: 1rem;
+    }
   }
 
   &--primary {
-    min-width: 350px;
-    background-color: rgba(45, 54, 81, 0.8);
-    border: 2px solid #2d3651;
+    height: 60px;
+
+    border: 2px solid $color-primary;
+    background-color: rgba($color-primary, 0.8);
+
+    @include sm-min {
+      min-width: 350px;
+    }
+    @include sm {
+      width: 100%;
+      // min-width: auto;
+    }
   }
 }
