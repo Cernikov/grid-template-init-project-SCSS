@@ -26,6 +26,10 @@
       grid-template-columns: 1fr 236px;
       gap: 20px;
     }
+    @include sm {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
   }
 
   &__content {
@@ -48,22 +52,22 @@
         margin-bottom: 36px;
         font-size: 1.5rem;
       }
+      @include sm {
+        margin-bottom: 36px;
+        text-align: center;
+        font-size: 1.5rem;
+      }
     }
     p {
-     
       @include lg-min {
         font-size: 1.125rem;
         letter-spacing: 0.049em;
       }
-      
+
       @include lg-md {
         letter-spacing: 0.055em;
       }
-      @include md {
-        // margin-bottom: 36px;
-        // font-size: 1rem;
-      }
-
+     
       &:first-of-type {
         margin-top: -5px;
         position: relative;
@@ -82,6 +86,9 @@
           }
           @include md {
             right: -10px;
+          }
+          @include sm {
+            display: none;
           }
         }
       }
