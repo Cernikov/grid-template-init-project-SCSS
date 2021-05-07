@@ -348,7 +348,7 @@ template {
 /* sm */
 /* xs */
 /* xx */
-.header-menu__container, .header-content__container {
+.header-menu__container, .header-content__container, .about__container {
   max-width: 1340px;
   margin: auto;
   padding-right: 20px;
@@ -390,6 +390,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 1.125em;
   -webkit-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s;
@@ -733,6 +734,65 @@ a {
 
 .skill-item:nth-of-type(9) {
   grid-area: art9;
+}
+
+.about {
+  display: grid;
+  padding: 100px 0 100px 0;
+  background-color: #e5e5e5;
+  letter-spacing: 0.055em;
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: 1fr 271px;
+  gap: 100px;
+}
+
+.about__content h2 {
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 56px;
+  font-size: 2.5rem;
+  line-height: 1.18em;
+  letter-spacing: 0.1em;
+  margin-top: 0;
+  color: #2d3651;
+}
+
+.about__content p {
+  letter-spacing: 0.049em;
+  font-size: 1.125rem;
+}
+
+.about__content p:first-of-type {
+  margin-top: -5px;
+  position: relative;
+}
+
+.about__content p:first-of-type::after {
+  content: " ";
+  position: absolute;
+  height: 200px;
+  width: 2px;
+  background-color: rgba(99, 117, 136, 0.2);
+  top: 0;
+  right: -50px;
+}
+
+.about__content p:last-of-type {
+  margin: 0;
+}
+
+.about__image {
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: center;
+}
+
+.about__image img {
+  max-width: 100%;
+  max-height: 480px;
 }
 
 @media (min-width: 576px) {
