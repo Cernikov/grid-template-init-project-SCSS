@@ -738,7 +738,6 @@ a {
 
 .about {
   display: grid;
-  padding: 100px 0 100px 0;
   background-color: #e5e5e5;
   letter-spacing: 0.055em;
 }
@@ -746,13 +745,10 @@ a {
 .about__container {
   display: grid;
   grid-template-columns: 1fr 271px;
-  gap: 100px;
 }
 
 .about__content h2 {
   font-family: "Roboto Slab", serif;
-  margin-bottom: 56px;
-  font-size: 2.5rem;
   line-height: 1.18em;
   letter-spacing: 0.1em;
   margin-top: 0;
@@ -774,9 +770,8 @@ a {
   position: absolute;
   height: 200px;
   width: 2px;
-  background-color: rgba(99, 117, 136, 0.2);
+  background-color: rgba(99, 117, 136, 0.1);
   top: 0;
-  right: -50px;
 }
 
 .about__content p:last-of-type {
@@ -846,6 +841,19 @@ a {
   .skills__container {
     grid-template-areas: "art1 art1 art2 art3" "art4 art5 art5 art6" "art7 art8 art9 art6";
   }
+  .about {
+    padding: 100px 0 100px 0;
+  }
+  .about__container {
+    gap: 100px;
+  }
+  .about__content h2 {
+    margin-bottom: 56px;
+    font-size: 2.5rem;
+  }
+  .about__content p:first-of-type::after {
+    right: -50px;
+  }
 }
 
 @media (max-width: 991.8px) and (min-width: 768px) {
@@ -862,6 +870,23 @@ a {
   }
   .skills__container {
     grid-template-areas: "art1 art1 art2" "art3 art4 art4" "art5 art5 art6" "art7 art8 art6" "art7 art9 art9";
+  }
+  .about {
+    padding: 80px 0 80px 0;
+  }
+  .about__container {
+    gap: 40px;
+  }
+  .about__content h2 {
+    margin-bottom: 42px;
+    font-size: 2rem;
+  }
+  .about__content p {
+    font-size: 1rem;
+    letter-spacing: 0.055em;
+  }
+  .about__content p:first-of-type::after {
+    right: -20px;
   }
 }
 

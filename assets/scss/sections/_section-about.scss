@@ -1,29 +1,58 @@
 .about {
   display: grid;
-  padding: 100px 0 100px 0;
+  
   background-color: $color-gray-light;
   letter-spacing: 0.055em;
+  @include lg-min{
+    padding: 100px 0 100px 0;
+  }
+  @include lg-md{
+    padding: 80px 0 80px 0;
+  }
 
   &__container {
     @extend %container;
     display: grid;
     grid-template-columns: 1fr 271px;
-    gap: 100px;
+    @include lg-min{
+      gap: 100px;
+    }
+    @include lg-md{
+      gap: 40px;
+    }
+    
   }
 
   &__content {
     h2 {
       font-family: $font-header;
-      margin-bottom: 56px;
-      font-size: 2.5rem;
+      
       line-height: 1.18em;
       letter-spacing: 0.1em;
       margin-top: 0;
       color: $color-primary;
+      @include lg-min{
+        margin-bottom: 56px;
+        font-size: 2.5rem;
+      }
+      @include lg-md{
+        margin-bottom: 42px;
+        font-size: 2rem;
+      }
+
+
     }
     p {
       letter-spacing: 0.049em;
-      font-size: 1.125rem;
+      
+      
+        font-size: 1.125rem;
+      
+      @include lg-md{
+        font-size: 1rem;
+        letter-spacing: 0.055em;
+      }
+
       &:first-of-type {
         margin-top: -5px;
         position: relative;
@@ -34,7 +63,15 @@
           width: 2px;
           background-color:rgba( $color-gray, 0.1);
           top: 0;
-          right: -50px;
+          @include lg-min{
+            right: -50px;
+          }
+          @include lg-md{
+            right: -20px;
+            
+          }
+         
+
         }
       }
 
