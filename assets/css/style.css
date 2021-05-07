@@ -755,11 +755,6 @@ a {
   color: #2d3651;
 }
 
-.about__content p {
-  letter-spacing: 0.049em;
-  font-size: 1.125rem;
-}
-
 .about__content p:first-of-type {
   margin-top: -5px;
   position: relative;
@@ -851,6 +846,10 @@ a {
     margin-bottom: 56px;
     font-size: 2.5rem;
   }
+  .about__content p {
+    font-size: 1.125rem;
+    letter-spacing: 0.049em;
+  }
   .about__content p:first-of-type::after {
     right: -50px;
   }
@@ -880,9 +879,9 @@ a {
   .about__content h2 {
     margin-bottom: 42px;
     font-size: 2rem;
+    line-height: 1.2em;
   }
   .about__content p {
-    font-size: 1rem;
     letter-spacing: 0.055em;
   }
   .about__content p:first-of-type::after {
@@ -926,6 +925,20 @@ a {
   }
   .skill-item__title {
     font-size: 1.125rem;
+  }
+  .about {
+    padding: 60px 0 60px 0;
+  }
+  .about__container {
+    grid-template-columns: 1fr 236px;
+    gap: 20px;
+  }
+  .about__content h2 {
+    margin-bottom: 36px;
+    font-size: 1.5rem;
+  }
+  .about__content p:first-of-type::after {
+    right: -10px;
   }
 }
 
