@@ -1,6 +1,6 @@
 .header-navbar {
   /* background-color: rgb(43, 159, 226); */
-
+  letter-spacing: 0.1em;
   @include md {
     display: flex;
     justify-content: flex-end;
@@ -111,27 +111,24 @@
       text-align: right;
       background-color: rgba($color-gray-dark, 0.9);
     }
-    &.active{
+    &.active {
       display: block;
     }
-   
   }
 
   &__item {
-    @include md-min{
+    @include md-min {
       margin: 0 10px;
     }
-    @include md{
+    @include md {
       margin: $gap;
     }
-    
   }
 
   &__link {
     display: block;
     padding: 10px;
     font-size: 1.125rem;
-    letter-spacing: 0.094em;
     transition: color 0.5s;
 
     &:hover,

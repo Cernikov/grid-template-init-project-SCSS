@@ -4,9 +4,7 @@
 
 html {
   overflow-y: scroll;
-
-  letter-spacing: 0.1em;
-
+  // letter-spacing: 0.1em;
   color: $color-gray;
 
   font-family: $font-main;
@@ -89,6 +87,7 @@ a {
     @include md {
       min-width: 170px;
       height: 40px;
+      letter-spacing: 0.05em;
 
       font-size: 1rem;
     }
