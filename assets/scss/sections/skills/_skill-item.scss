@@ -1,11 +1,8 @@
 .skill-item {
   position: relative;
-
   overflow: hidden;
 
   // background-color: red;
-
-
 
   &:hover {
     .skill-item__overlay {
@@ -20,7 +17,6 @@
       color: $color-accent;
     }
   }
-
 
   &__overlay {
     // background-color: $color-primary;
@@ -73,13 +69,10 @@
   }
 }
 
-
 @for $i from 1 through 9 {
   .skill-item:nth-of-type(#{$i}) {
     grid-area: art#{$i};
   }
-
-
 
   // ul:nth-child(3n + #{$i}) {
   //   background-color: lighten($base-color, $i * 5%);

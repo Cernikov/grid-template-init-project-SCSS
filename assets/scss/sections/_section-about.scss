@@ -2,6 +2,7 @@
   display: grid;
   background-color: $color-gray-light;
   letter-spacing: 0.055em;
+
   @include lg-min {
     padding: 100px 0 100px 0;
   }
@@ -34,11 +35,8 @@
 
   &__content {
     h2 {
-      font-family: $font-header;
-      line-height: 1.18em;
-      letter-spacing: 0.1em;
       margin-top: 0;
-      color: $color-primary;
+      
       @include lg-min {
         margin-bottom: 56px;
         font-size: 2.5rem;
@@ -46,16 +44,13 @@
       @include lg-md {
         margin-bottom: 42px;
         font-size: 2rem;
-        line-height: 1.2em;
       }
       @include md {
         margin-bottom: 36px;
         font-size: 1.5rem;
       }
       @include sm {
-        margin-bottom: 36px;
         text-align: center;
-        font-size: 1.5rem;
       }
     }
     p {
