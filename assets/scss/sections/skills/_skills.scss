@@ -3,12 +3,12 @@
     padding: 10px 10px 40px;
   }
   @include sm {
-    padding: 20px;
+    padding: $gap;
   }
 
   &__container {
     display: grid;
-    margin-bottom: 20px;
+    margin-bottom: $gap;
     gap: 10px;
     @include lg-min {
       grid-template-areas:

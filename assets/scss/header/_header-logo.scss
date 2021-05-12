@@ -1,8 +1,7 @@
 .header-logo {
   letter-spacing: 0.22em;
-
-  font-size: 24px;
-  /* background-color: rgb(124, 102, 144); */
+  font-size: 1.5rem;
+  
 
   &__link {
     display: block;
@@ -16,7 +15,7 @@
     margin-right: 4px;
     padding: 14px 1px 13px 5px;
 
-    border: 3px solid #d53d27;
+    border: 3px solid $color-highligh;
   }
 }
 

@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
 
-  // background-color: red;
+  
 
   &:hover {
     .skill-item__overlay {
@@ -19,8 +19,7 @@
   }
 
   &__overlay {
-    // background-color: $color-primary;
-    // opacity: 0.8;
+    
     z-index: 1;
 
     transition: opacity 0.5s;
@@ -30,8 +29,6 @@
 
   &__image {
     transition: transform 0.5s;
-    // background-image: url(../img/img-html.png);
-
     background-color: $color-primary;
     background-position: center;
     background-size: cover;
@@ -56,7 +53,7 @@
   }
 
   &__link {
-    // background-color: #d53d27;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,35 +71,6 @@
     grid-area: art#{$i};
   }
 
-  // ul:nth-child(3n + #{$i}) {
-  //   background-color: lighten($base-color, $i * 5%);
-  // }
+ 
 }
 
-// .skill-item:nth-of-type(1) {
-//   grid-area: art1;
-// }
-// .skill-item:nth-of-type(2) {
-//   grid-area: art2;
-// }
-// .skill-item:nth-of-type(3) {
-//   grid-area: art3;
-// }
-// .skill-item:nth-of-type(4) {
-//   grid-area: art4;
-// }
-// .skill-item:nth-of-type(5) {
-//   grid-area: art5;
-// }
-// .skill-item:nth-of-type(6) {
-//   grid-area: art6;
-// }
-// .skill-item:nth-of-type(7) {
-//   grid-area: art7;
-// }
-// .skill-item:nth-of-type(8) {
-//   grid-area: art8;
-// }
-// .skill-item:nth-of-type(9) {
-//   grid-area: art9;
-// }

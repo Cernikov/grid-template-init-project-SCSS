@@ -12,11 +12,11 @@
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
-    margin-bottom: 40px;
+    margin-bottom: $gap * 2;
 
     a {
       display: block;
-      padding: 10px;
+      padding: $gap / 2;
     }
     &::after {
       content: " ";

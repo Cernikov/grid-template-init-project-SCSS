@@ -7,9 +7,9 @@
   @include md {
     background-color: rgba($color-gray-dark, 0.25);
     box-shadow: -3px 3px 20px -10px black;
+    box-shadow: -3px 3px 20px -10px black;
 }
 
-  
 
   &__container {
     display: grid;
@@ -20,7 +20,3 @@
   }
 }
 
-// TODO: переделать через экстенд
-
-// .header-menu__container,
-// .header-content__container

@@ -18,18 +18,18 @@
     display: grid;
     grid-template-columns: 1fr 271px;
     @include lg-min {
-      gap: 100px;
+      gap: $gap * 5;
     }
     @include lg-md {
-      gap: 40px;
+      gap: $gap * 2;
     }
     @include md {
       grid-template-columns: 1fr 236px;
-      gap: 20px;
+      gap: $gap;
     }
     @include sm {
       grid-template-columns: 1fr;
-      gap: 20px;
+      gap: $gap;
     }
   }
 

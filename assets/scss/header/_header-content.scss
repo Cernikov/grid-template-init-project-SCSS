@@ -1,6 +1,6 @@
 .header-content {
   position: relative;
-  /* background-color: rgb(226, 43, 43); */
+  
 
   &__container {
     @extend %container;
@@ -12,18 +12,14 @@
     @include lg-min {
       margin: 0 0 53px 0;
     }
-    // @media (max-width: 992px) {
-    //   margin: 0 0 43px 0;
-    // }
+    
     @include lg-md {
       margin: 0 0 43px 0;
     }
     @include md {
       margin: 0 0 33px 0;
     }
-    // @media (max-width: 768px) {
-    //   margin: 0 0 33px 0;
-    // }
+    
   }
 
   &__actions {
