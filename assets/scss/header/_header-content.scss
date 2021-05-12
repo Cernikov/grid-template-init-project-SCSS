@@ -1,6 +1,6 @@
 .header-content {
   position: relative;
-  
+
 
   &__container {
     @extend %container;
@@ -12,14 +12,12 @@
     @include lg-min {
       margin: 0 0 53px 0;
     }
-    
     @include lg-md {
       margin: 0 0 43px 0;
     }
     @include md {
       margin: 0 0 33px 0;
     }
-    
   }
 
   &__actions {

@@ -14,16 +14,20 @@
   }
   h2 {
     margin-top: 0;
+
     @include lg-min {
       margin-bottom: 56px;
+
       font-size: 2.5rem;
     }
     @include lg-md {
       margin-bottom: 42px;
+
       font-size: 2rem;
     }
     @include md {
       margin-bottom: 36px;
+
       font-size: 1.5rem;
     }
     @include sm {
@@ -33,38 +37,36 @@
 
   &__grid {
     display: grid;
+
     padding-bottom: 20px;
+
     gap: 20px;
     @include lg-min {
-      grid-template-areas:
-        "p1 p1 p2 p3"
-        "p4 p5 p6 p6";
+      grid-template-areas: "p1 p1 p2 p3"
+      "p4 p5 p6 p6";
       grid-template-columns: repeat(4, 1fr);
     }
     @include lg-md {
-      grid-template-areas:
-        "p1 p1 p2"
-        "p3 p4 p4"
-        "p5 p5 p6";
+      grid-template-areas: "p1 p1 p2"
+      "p3 p4 p4"
+      "p5 p5 p6";
       grid-template-columns: repeat(3, 1fr);
     }
     @include md-sm {
-      grid-template-areas:
-        "p1 p2"
-        "p3 p4"
-        "p5 p6";
+      grid-template-areas: "p1 p2"
+      "p3 p4"
+      "p5 p6";
       grid-template-columns: repeat(2, 1fr);
     }
     @include sm {
-      grid-template-areas:
-        "p1"
-        "p2"
-        "p3"
-        "p4"
-        "p5"
-        "p6"
-        ;
-      grid-template-columns:1fr;
+      grid-template-areas: "p1"
+      "p2"
+      "p3"
+      "p4"
+      "p5"
+      "p6"
+      grid-template-columns: 1fr;
+      ;
     }
   }
 }
@@ -74,8 +76,9 @@
     background-color: #d8d8d8;
 
     .post-item__image img {
-      background-color: #d8d8d8;
       transform: scale(1.1);
+
+      background-color: #d8d8d8;
     }
     .post-item__text p,
     h3 {
@@ -83,38 +86,47 @@
     }
   }
   &__link {
-    text-align: center;
     display: grid;
+
     height: 100%;
+
+    text-align: center;
+
     grid-template-rows: 300px 1fr;
   }
 
   &__image {
-    background-color: $color-primary;
-    overflow: hidden;
     display: flex;
-    justify-content: center;
+    overflow: hidden;
     align-content: center;
+    justify-content: center;
+
+    background-color: $color-primary;
     img {
       width: 100%;
-      background-position: center;
-      object-fit: cover;
+
       transition: transform 0.5s;
+
+      background-position: center;
+
+      object-fit: cover;
     }
   }
 
   &__text {
     display: grid;
     align-content: center;
-    padding: 20px;
+
+    padding: $gap;
 
     h3 {
-      font-family: $font-header;
       transition: color 0.5s;
+
+      font-family: $font-header;
     }
     p {
-      letter-spacing: 0;
       transition: color 0.5s;
+      letter-spacing: 0;
     }
   }
 }
@@ -124,13 +136,11 @@
   justify-content: center;
   .btn--primary {
     min-width: 350px;
-    @include sm{
-  width: 100%;
+
+    @include sm {
+      width: 100%;
     }
   }
-
-
-
 }
 
 @for $i from 1 through 6 {

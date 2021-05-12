@@ -1,7 +1,9 @@
 .about {
   display: grid;
-  background-color: $color-gray-light;
+
   letter-spacing: 0.055em;
+
+  background-color: $color-gray-light;
 
   @include lg-min {
     padding: 100px 0 100px 0;
@@ -14,8 +16,9 @@
   }
 
   &__container {
-    @extend %container;
     display: grid;
+
+    @extend %container;
     grid-template-columns: 1fr 271px;
     @include lg-min {
       gap: $gap * 5;
@@ -24,29 +27,32 @@
       gap: $gap * 2;
     }
     @include md {
-      grid-template-columns: 1fr 236px;
       gap: $gap;
+      grid-template-columns: 1fr 236px;
     }
     @include sm {
-      grid-template-columns: 1fr;
       gap: $gap;
+      grid-template-columns: 1fr;
     }
   }
 
   &__content {
     h2 {
       margin-top: 0;
-      
+
       @include lg-min {
         margin-bottom: 56px;
+
         font-size: 2.5rem;
       }
       @include lg-md {
         margin-bottom: 42px;
+
         font-size: 2rem;
       }
       @include md {
         margin-bottom: 36px;
+
         font-size: 1.5rem;
       }
       @include sm {
@@ -55,24 +61,29 @@
     }
     p {
       @include lg-min {
-        font-size: 1.125rem;
         letter-spacing: 0.049em;
-      }
 
+        font-size: 1.125rem;
+      }
       @include lg-md {
         letter-spacing: 0.055em;
       }
-     
+
       &:first-of-type {
-        margin-top: -5px;
         position: relative;
+
+        margin-top: -5px;
         &::after {
-          content: " ";
           position: absolute;
-          height: 200px;
-          width: 2px;
-          background-color: rgba($color-gray, 0.1);
           top: 0;
+
+          width: 2px;
+          height: 200px;
+
+          content: " ";
+
+          background-color: rgba($color-gray, 0.1);
+
           @include lg-min {
             right: -50px;
           }
@@ -96,6 +107,7 @@
   &__image {
     display: grid;
     align-content: center;
+
     justify-items: center;
 
     img {
